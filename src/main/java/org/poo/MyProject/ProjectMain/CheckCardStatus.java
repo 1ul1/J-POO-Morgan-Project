@@ -19,20 +19,6 @@ public final class CheckCardStatus implements Command {
             if (user.getAccounts().size() == 0) {
                 break;
             }
-            for (int i = 0; i < user.getAccounts().get(0).getCards().size(); i++) {
-                for (Account account : user.getAccounts()) {
-                    Card card = account.getCards().get(i);
-                    if (account.getCards().size() == 0) {
-                        break;
-                    }
-                }
-//                Card card = user.getAccounts().get(0).getCards().get(i);
-//                if (user.getAccounts().get(0).getCards().size() == 0) {
-//                    break;
-//                }
-//                if (card.getCardNumber().equals(commandInput.getCardNumber())) {
-//                }
-            }
         }
     }
 }

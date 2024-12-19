@@ -1,0 +1,17 @@
+commit 657087e89e923e11b3e808cd137f12d8b491da08
+Author: Tudor Robu <tudor.robu.bv@gmail.com>
+Date:   Thu Dec 19 20:30:11 2024 +0200
+
+    Adăugate funcțiile PayOnline și SendMoney pentru procesarea plăților online și transferul de bani între conturi, inclusiv conversia valutară și dezactivarea cardurilor de unică folosință
+
+commit 35fb7a38c616ebc6560a6d0b8a3b0ed78d572066
+Author: Tudor Robu <tudor.robu.bv@gmail.com>
+Date:   Thu Dec 19 18:11:43 2024 +0200
+
+    Implementare logică centrală pentru procesarea comenzilor utilizatorilor. Am adăugat funcția  care parcurge comenzile și delegă execuția acestora folosind un singleton pentru gestionarea comenzilor
+
+commit 1f9922bf04b2d2b454d4aa939a8109c383a9e4a0
+Author: 1ul1 <152524334+1ul1@users.noreply.github.com>
+Date:   Sun Dec 15 15:42:52 2024 +0200
+
+    Upload initial

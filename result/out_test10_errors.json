@@ -1,9 +1,17 @@
 [ {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 8
+}, {
   "command" : "deleteAccount",
   "timestamp" : 10
 }, {
   "command" : "deleteAccount",
   "timestamp" : 15
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 17
 }, {
   "command" : "printUsers",
   "output" : [ {
@@ -62,4 +70,8 @@
     "description" : "Card not found"
   },
   "timestamp" : 26
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 27
 } ]

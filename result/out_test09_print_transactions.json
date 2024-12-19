@@ -36,6 +36,10 @@
   } ],
   "timestamp" : 10
 }, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 14
+}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Laurie",

@@ -428,6 +428,18 @@
   } ],
   "timestamp" : 269
 }, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 371
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 372
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 373
+}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Gabor",

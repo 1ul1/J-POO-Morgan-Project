@@ -54,6 +54,14 @@
   } ],
   "timestamp" : 9
 }, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 14
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 15
+}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Brian",
@@ -121,6 +129,10 @@
   } ],
   "timestamp" : 24
 }, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 28
+}, {
   "command" : "payOnline",
   "output" : {
     "timestamp" : 30,
@@ -128,8 +140,16 @@
   },
   "timestamp" : 30
 }, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 34
+}, {
   "command" : "deleteAccount",
   "timestamp" : 37
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 42
 }, {
   "command" : "deleteAccount",
   "timestamp" : 45
@@ -218,4 +238,8 @@
     } ]
   } ],
   "timestamp" : 46
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 52
 } ]

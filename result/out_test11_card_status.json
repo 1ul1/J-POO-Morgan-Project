@@ -1,4 +1,8 @@
 [ {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 11
+}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "David",
@@ -38,4 +42,8 @@
     } ]
   } ],
   "timestamp" : 22
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 23
 } ]

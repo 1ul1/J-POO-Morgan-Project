@@ -112,4 +112,12 @@
     "accounts" : [ ]
   } ],
   "timestamp" : 18
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 30
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 34
 } ]

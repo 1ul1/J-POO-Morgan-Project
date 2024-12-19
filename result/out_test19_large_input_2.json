@@ -573,6 +573,10 @@
   } ],
   "timestamp" : 92
 }, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 119
+}, {
   "command" : "payOnline",
   "output" : {
     "timestamp" : 145,
@@ -712,6 +716,18 @@
     "description" : "Card not found"
   },
   "timestamp" : 164
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 172
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 173
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 174
 }, {
   "command" : "printUsers",
   "output" : [ {

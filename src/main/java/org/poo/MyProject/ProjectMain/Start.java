@@ -58,16 +58,20 @@ public final class Start {
                     commandInstance.setCommand(new SetMinBalance());
                     commandInstance.execute(input, output, users, commandInput);
                     break;
-//                case "checkCardStatus":
-//                    commandInstance.setCommand(new CheckCardStatus());
-//                    commandInstance.execute(input, output, users, commandInput);
-//                    break;
+                case "checkCardStatus":
+                    commandInstance.setCommand(new CheckCardStatus());
+                    commandInstance.execute(input, output, users, commandInput);
+                    break;
                 case "payOnline":
                     commandInstance.setCommand(new PayOnline());
                     commandInstance.execute(input, output, users, commandInput);
                     break;
                 case "sendMoney":
                     commandInstance.setCommand(new SendMoney());
+                    commandInstance.execute(input, output, users, commandInput);
+                    break;
+                case "printTransactions":
+                    commandInstance.setCommand(new PrintTransactions());
                     commandInstance.execute(input, output, users, commandInput);
                     break;
                 default:

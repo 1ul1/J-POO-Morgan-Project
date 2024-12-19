@@ -989,6 +989,10 @@
   } ],
   "timestamp" : 81
 }, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 123
+}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Sachi",
@@ -1676,4 +1680,8 @@
     } ]
   } ],
   "timestamp" : 194
+}, {
+  "command" : "printTransactions",
+  "output" : [ ],
+  "timestamp" : 195
 } ]

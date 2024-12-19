@@ -1,5 +1,6 @@
 package org.poo.MyProject.Classes;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.poo.fileio.CommandInput;
 import org.poo.fileio.UserInput;
 import lombok.Data;
@@ -12,6 +13,8 @@ public class User {
     private String lastName;
     private String email;
     private ArrayList<Account> accounts = new ArrayList<>();
+    @JsonIgnore
+    private ArrayList<Transaction> transactions = new ArrayList<>();
     public User(final UserInput userInput) {
         this.firstName = userInput.getFirstName();
         this.lastName = userInput.getLastName();
@@ -32,5 +35,11 @@ public class User {
      */
     public void setAccount(final CommandInput commandInput) {
         accounts.add(new Account(commandInput));
+    }
+    /**
+     * Adaugam o tranzactie
+     */
+    public void addTransaction(final Transaction transaction) {
+        transactions.add(transaction);
     }
 }
