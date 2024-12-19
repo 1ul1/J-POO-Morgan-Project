@@ -10,12 +10,12 @@ import org.poo.fileio.ObjectInput;
 
 import java.util.ArrayList;
 
-public class DeleteAccount implements Command {
+public final class DeleteAccount implements Command {
     public DeleteAccount() {
     }
     @Override
     public void execute(final ObjectInput input, final ArrayNode output,
-                        ArrayList<User> users, final CommandInput commandInput) {
+                        final ArrayList<User> users, final CommandInput commandInput) {
         ObjectMapper objectMapper = new ObjectMapper();
         ObjectNode jsonNode = objectMapper.createObjectNode();
         jsonNode.put("command", "deleteAccount");
@@ -25,7 +25,7 @@ public class DeleteAccount implements Command {
             }
             for (int i = 0; i < user.getAccounts().size(); i++) {
                 Account account = user.getAccounts().get(i);
-                if (account.getIBAN().equals(commandInput.getAccount())
+                if (account.getIban().equals(commandInput.getAccount())
                         && account.getBalance() == 0) {
                     user.getAccounts().remove(i);
                     ObjectNode json = objectMapper.createObjectNode();

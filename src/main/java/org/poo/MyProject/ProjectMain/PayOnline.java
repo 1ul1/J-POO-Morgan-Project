@@ -12,13 +12,13 @@ import org.poo.fileio.ObjectInput;
 
 import java.util.ArrayList;
 
-public class PayOnline implements Command {
+public final class PayOnline implements Command {
     public PayOnline() {
     }
 
     @Override
     public void execute(final ObjectInput input, final ArrayNode output,
-                        ArrayList<User> users, final CommandInput commandInput) {
+                        final ArrayList<User> users, final CommandInput commandInput) {
         for (User user : users) {
             if (user.getEmail().equals(commandInput.getEmail())) {
                 for (Account account : user.getAccounts()) {
@@ -34,30 +34,36 @@ public class PayOnline implements Command {
                                     }
                                 }
                                 return;
-                            }
-                            else {
+                            } else {
+                                // Convertim in EURO toate sumele
+                                // Salvam ratele ca sa putem reveni la
+                                // sumele initiale neconvertite (from & to)
                                 double rate1 = 0;
                                 double rate2 = 0;
                                 double from = 0;
                                 double to = 0;
                                 for (ExchangeInput exchangeInput : input.getExchangeRates()) {
                                     if (exchangeInput.getFrom().equals("EUR")
-                                            && exchangeInput.getTo().equals(account.getCurrency())) {
+                                            && exchangeInput.getTo()
+                                            .equals(account.getCurrency())) {
                                         rate1 = exchangeInput.getRate();
                                         from = account.getBalance() / rate1;
                                     }
                                     if (exchangeInput.getTo().equals("EUR")
-                                            && exchangeInput.getFrom().equals(account.getCurrency())) {
+                                            && exchangeInput.getFrom()
+                                            .equals(account.getCurrency())) {
                                         rate1 = 1 / exchangeInput.getRate();
                                         from = account.getBalance() / rate1;
                                     }
                                     if (exchangeInput.getFrom().equals("EUR")
-                                            && exchangeInput.getTo().equals(commandInput.getCurrency())) {
+                                            && exchangeInput.getTo()
+                                            .equals(commandInput.getCurrency())) {
                                         rate2 = exchangeInput.getRate();
                                         to = commandInput.getAmount() / rate2;
                                     }
                                     if (exchangeInput.getTo().equals("EUR")
-                                            && exchangeInput.getFrom().equals(commandInput.getCurrency())) {
+                                            && exchangeInput.getFrom()
+                                            .equals(commandInput.getCurrency())) {
                                         rate2 = 1 / exchangeInput.getRate();
                                         to = commandInput.getAmount() / rate2;
                                     }

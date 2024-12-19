@@ -6,7 +6,7 @@
     "email" : "Gabor_Hasler@hotmail.ch",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 95065.0,
+      "balance" : 90040.0,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ ]
@@ -23,7 +23,7 @@
     "email" : "John_Schmidt@gmx.ch",
     "accounts" : [ {
       "IBAN" : "RO69POOB6209498372540635",
-      "balance" : 4943.0,
+      "balance" : 5347.0,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ ]
@@ -40,7 +40,7 @@
     "email" : "Victoria_Rice@icloud.ch",
     "accounts" : [ {
       "IBAN" : "RO90POOB5450777208072365",
-      "balance" : 1654.0,
+      "balance" : 338.0,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ ]
@@ -80,7 +80,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO98POOB7190609943699593",
-      "balance" : 1912.0,
+      "balance" : 2084.222222222222,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -114,7 +114,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO75POOB8279679254660818",
-      "balance" : 1227.0,
+      "balance" : 2967.0,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ ]
@@ -125,7 +125,7 @@
     "email" : "Liam_Guthrie@hushmail.nz",
     "accounts" : [ {
       "IBAN" : "RO19POOB4981055641668812",
-      "balance" : 48370.0,
+      "balance" : 48844.0,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ ]
@@ -159,7 +159,7 @@
     "email" : "Roberta_Mocanu@aol.ro",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 2752.0,
+      "balance" : 4787.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -244,7 +244,7 @@
     "email" : "Christophe_Chopard@yahoo.ch",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 6640.0,
+      "balance" : 6730.0,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ ]
@@ -267,7 +267,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO45POOB6505529013808948",
-      "balance" : 1792.0,
+      "balance" : 2364.0,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ ]
@@ -284,7 +284,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO01POOB3925326637526572",
-      "balance" : 756.0,
+      "balance" : 1665.0,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ ]
@@ -335,7 +335,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO19POOB5993192794373940",
-      "balance" : 1111.0,
+      "balance" : 1859.0,
       "currency" : "NZD",
       "type" : "savings",
       "cards" : [ ]
@@ -352,7 +352,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO49POOB4985907300499418",
-      "balance" : 1446.0,
+      "balance" : 3286.0,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -403,7 +403,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO66POOB5231566576817248",
-      "balance" : 1408.0,
+      "balance" : 1882.0,
       "currency" : "CAD",
       "type" : "savings",
       "cards" : [ ]
@@ -536,7 +536,7 @@
       } ]
     }, {
       "IBAN" : "RO98POOB7190609943699593",
-      "balance" : 2007.0,
+      "balance" : 2179.222222222222,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ {
@@ -642,7 +642,7 @@
     "email" : "Roberta_Mocanu@aol.ro",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 4523.0,
+      "balance" : 6558.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
@@ -757,7 +757,7 @@
     "email" : "Christophe_Chopard@yahoo.ch",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 7609.0,
+      "balance" : 7699.0,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -789,7 +789,7 @@
       } ]
     }, {
       "IBAN" : "RO45POOB6505529013808948",
-      "balance" : 2003.0,
+      "balance" : 2575.0,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
@@ -904,7 +904,7 @@
       } ]
     }, {
       "IBAN" : "RO49POOB4985907300499418",
-      "balance" : 2766.0,
+      "balance" : 4606.0,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
@@ -1106,7 +1106,7 @@
     "email" : "Ryan_Waters@gmx.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 38388.0,
+      "balance" : 39081.11111111111,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -1115,7 +1115,7 @@
       } ]
     }, {
       "IBAN" : "RO98POOB7190609943699593",
-      "balance" : 2861.0,
+      "balance" : 3033.222222222222,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ {
@@ -1152,7 +1152,7 @@
     "email" : "Arne_Kobelt_B.A.@icloud.de",
     "accounts" : [ {
       "IBAN" : "RO37POOB7013767509830666",
-      "balance" : 49747.0,
+      "balance" : 49505.0,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1221,7 +1221,7 @@
     "email" : "Roberta_Mocanu@aol.ro",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 10572.0,
+      "balance" : 12607.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
@@ -1230,7 +1230,7 @@
       } ]
     }, {
       "IBAN" : "RO40POOB2135483650246268",
-      "balance" : 3428.0,
+      "balance" : 14664.0,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
@@ -1253,7 +1253,7 @@
       } ]
     }, {
       "IBAN" : "RO75POOB1098983729823992",
-      "balance" : 505.0,
+      "balance" : 1418.0,
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
@@ -1276,7 +1276,7 @@
       } ]
     }, {
       "IBAN" : "RO15POOB0048706387164463",
-      "balance" : 1378.0,
+      "balance" : 2066.0,
       "currency" : "MXN",
       "type" : "savings",
       "cards" : [ {
@@ -1290,7 +1290,7 @@
     "email" : "Claude_Tremblay@hotmail.ca",
     "accounts" : [ {
       "IBAN" : "RO33POOB4049920806186500",
-      "balance" : 3554.0,
+      "balance" : 3796.0,
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
@@ -1313,7 +1313,7 @@
     "email" : "Anouk_'s_Gravensande@hushmail.nl",
     "accounts" : [ {
       "IBAN" : "RO69POOB9846198978826791",
-      "balance" : 8997.0,
+      "balance" : 5213.0,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1336,7 +1336,7 @@
     "email" : "Christophe_Chopard@yahoo.ch",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 8298.0,
+      "balance" : 8388.0,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -1345,7 +1345,7 @@
       } ]
     }, {
       "IBAN" : "RO47POOB5866490978033060",
-      "balance" : 1086.0,
+      "balance" : 398.0,
       "currency" : "CHF",
       "type" : "savings",
       "cards" : [ {
@@ -1368,7 +1368,7 @@
       } ]
     }, {
       "IBAN" : "RO45POOB6505529013808948",
-      "balance" : 2321.0,
+      "balance" : 2893.0,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
@@ -1483,7 +1483,7 @@
       } ]
     }, {
       "IBAN" : "RO49POOB4985907300499418",
-      "balance" : 4567.0,
+      "balance" : 6407.0,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {

@@ -7,14 +7,17 @@ import org.poo.fileio.ObjectInput;
 
 import java.util.ArrayList;
 
-public class ExecuteCommand{
-    private ExecuteCommand(){
+public final class ExecuteCommand {
+    private ExecuteCommand() {
     }
 
     private static ExecuteCommand instance;
 
-    public static ExecuteCommand getInstance(){
-        if(instance == null){
+    /**
+     * Implementarea pentru instanta de singletone
+     */
+    public static ExecuteCommand getInstance() {
+        if (instance == null) {
             instance = new ExecuteCommand();
         }
         return instance;
@@ -22,11 +25,15 @@ public class ExecuteCommand{
 
     private Command command;
 
-    public void setCommand(Command command) {
+    public void setCommand(final Command command) {
         this.command = command;
     }
 
-    public void execute(ObjectInput input, ArrayNode output, ArrayList<User> users, CommandInput commandInput) {
+    /**
+     * pentru implementarea Design Patern-ului Strategy
+     */
+    public void execute(final ObjectInput input, final ArrayNode output,
+                        final ArrayList<User> users, final CommandInput commandInput) {
         command.execute(input, output, users, commandInput);
     }
 }

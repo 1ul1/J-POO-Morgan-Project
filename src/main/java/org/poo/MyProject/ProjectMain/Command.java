@@ -8,5 +8,9 @@ import org.poo.fileio.ObjectInput;
 import java.util.ArrayList;
 
 public interface Command {
-    void execute(ObjectInput input, ArrayNode output, ArrayList<User> users, CommandInput commandInput);
+    /**
+     * Interfata pt Strategy
+     */
+    void execute(ObjectInput input, ArrayNode output,
+                 ArrayList<User> users, CommandInput commandInput);
 }

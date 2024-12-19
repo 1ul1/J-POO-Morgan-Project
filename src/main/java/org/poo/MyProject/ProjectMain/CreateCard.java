@@ -8,18 +8,18 @@ import org.poo.fileio.ObjectInput;
 
 import java.util.ArrayList;
 
-public class CreateCard implements Command {
-    public CreateCard(){
+public final class CreateCard implements Command {
+    public CreateCard() {
     }
     @Override
     public void execute(final ObjectInput input, final ArrayNode output,
-                        ArrayList<User> users, final CommandInput commandInput) {
+                        final ArrayList<User> users, final CommandInput commandInput) {
         for (User user : users) {
             if (user.getAccounts().size() == 0) {
                 break;
             }
             for (Account account : user.getAccounts()) {
-                if (account.getIBAN().equals(commandInput.getAccount())) {
+                if (account.getIban().equals(commandInput.getAccount())) {
                     account.newCard();
                 }
             }

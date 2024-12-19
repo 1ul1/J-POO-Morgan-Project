@@ -1,20 +1,9 @@
 [ {
   "command" : "deleteAccount",
-  "output" : {
-    "success" : "Account deleted",
-    "timestamp" : 10
-  },
   "timestamp" : 10
 }, {
   "command" : "deleteAccount",
   "timestamp" : 15
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 21,
-    "description" : "Card not found"
-  },
-  "timestamp" : 21
 }, {
   "command" : "printUsers",
   "output" : [ {
@@ -23,7 +12,7 @@
     "email" : "Marinela_Puscasu@hotmail.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 2389.0,
+      "balance" : 1350.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -32,14 +21,20 @@
     "firstName" : "Alice",
     "lastName" : "Dima",
     "email" : "Alice_Dima@hotmail.ro",
-    "accounts" : [ ]
+    "accounts" : [ {
+      "IBAN" : "RO69POOB6209498372540635",
+      "balance" : 956.0,
+      "currency" : "RON",
+      "type" : "classic",
+      "cards" : [ ]
+    } ]
   }, {
     "firstName" : "Jan",
     "lastName" : "Ababe",
     "email" : "Jan_Ababe@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO90POOB5450777208072365",
-      "balance" : 0.0,
+      "balance" : 753.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -53,24 +48,13 @@
       "balance" : 0.0,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ]
     } ]
   } ],
   "timestamp" : 22
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 23,
-    "description" : "Card not found"
-  },
-  "timestamp" : 23
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 24,
-    "description" : "Card not found"
-  },
-  "timestamp" : 24
 }, {
   "command" : "payOnline",
   "output" : {

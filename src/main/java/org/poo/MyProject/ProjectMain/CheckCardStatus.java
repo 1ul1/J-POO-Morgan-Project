@@ -9,12 +9,12 @@ import org.poo.fileio.ObjectInput;
 
 import java.util.ArrayList;
 
-public class CheckCardStatus implements Command {
+public final class CheckCardStatus implements Command {
     public CheckCardStatus() {
     }
     @Override
     public void execute(final ObjectInput input, final ArrayNode output,
-                        ArrayList<User> users, final CommandInput commandInput) {
+                        final ArrayList<User> users, final CommandInput commandInput) {
         for (User user : users) {
             if (user.getAccounts().size() == 0) {
                 break;

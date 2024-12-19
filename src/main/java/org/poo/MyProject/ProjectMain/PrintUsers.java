@@ -9,12 +9,12 @@ import org.poo.fileio.ObjectInput;
 
 import java.util.ArrayList;
 
-public class PrintUsers implements Command {
+public final class PrintUsers implements Command {
     public PrintUsers() {
     }
     @Override
-    public void execute(final ObjectInput input, ArrayNode output,
-                        ArrayList<User> users, final CommandInput commandInput) {
+    public void execute(final ObjectInput input, final ArrayNode output,
+                        final ArrayList<User> users, final CommandInput commandInput) {
         ObjectMapper objectMapper = new ObjectMapper();
         ObjectNode jsonNode = objectMapper.createObjectNode();
         jsonNode.put("command", "printUsers");

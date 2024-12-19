@@ -7,16 +7,12 @@ import org.poo.fileio.ObjectInput;
 
 import java.util.ArrayList;
 
-public final class AddAccount implements Command {
-    public AddAccount() {
-    }
+public final class PrintTransactions implements Command {
+    private PrintTransactions() {}
     @Override
     public void execute(final ObjectInput input, final ArrayNode output,
                         final ArrayList<User> users, final CommandInput commandInput) {
-        for (User user : users) {
-            if (user.getEmail().equals(commandInput.getEmail())) {
-                user.setAccount(commandInput);
-            }
-        }
+        
     }
 }
+

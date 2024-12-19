@@ -10,11 +10,11 @@ public class Card {
     private String status;
     @JsonIgnore
     private boolean oneTimeCard = false;
-    public Card(String cardNumber, String status) {
+    public Card(final String cardNumber, final String status) {
         this.cardNumber = cardNumber;
         this.status = status;
     }
-    public Card(Card card) {
+    public Card(final Card card) {
         cardNumber = card.getCardNumber();
         status = card.getStatus();
     }
@@ -22,7 +22,10 @@ public class Card {
         cardNumber = Utils.generateCardNumber();
         status = "active";
     }
-    public Card(boolean oneTimeCard) {
+    /**
+     * @param oneTimeCard trebuie sa fie 'true' pentru ca cardul sa fie de unica folosinta
+     */
+    public Card(final boolean oneTimeCard) {
         cardNumber = Utils.generateCardNumber();
         status = "active";
         this.oneTimeCard = true;

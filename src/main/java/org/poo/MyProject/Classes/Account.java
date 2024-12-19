@@ -1,6 +1,5 @@
 package org.poo.MyProject.Classes;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Data;
@@ -13,39 +12,30 @@ import java.util.ArrayList;
 @JsonPropertyOrder({ "IBAN", "balance", "currency", "type", "cards" })
 public class Account {
     @JsonProperty("IBAN")
-    private String IBAN;
+    private String iban;
     private double balance;
+    @JsonIgnore
     private String email;
     private String currency;
     private String type;
+    @JsonIgnore
     private int timestamp;
+    @JsonIgnore
     private double interestRate;
     private ArrayList<Card> cards = new ArrayList<>();
     @JsonIgnore
-    private double minBalance = -100000;
+    private double minBalance;
 
-    public Account(CommandInput commandInput) {
+    public Account(final CommandInput commandInput) {
         email = commandInput.getEmail();
         currency = commandInput.getCurrency();
         type = commandInput.getAccountType();
         timestamp = commandInput.getTimestamp();
         interestRate = commandInput.getInterestRate();
         balance = 0;
-        IBAN = Utils.generateIBAN();
+        iban = Utils.generateIBAN();
     }
-    @JsonIgnore
-    public String getEmail() {
-        return email;
-    }
-    @JsonIgnore
-    public int getTimestamp() {
-        return timestamp;
-    }
-    @JsonIgnore
-    public double getInterestRate() {
-        return interestRate;
-    }
-    public Account(Account account) {
+    public Account(final Account account) {
         if (account == null) {
             return;
         }
@@ -55,22 +45,28 @@ public class Account {
         timestamp = account.getTimestamp();
         interestRate = account.getInterestRate();
         balance = account.getBalance();
-        IBAN = account.getIBAN();
+        iban = account.getIban();
         cards = new ArrayList<>();
         for (Card card : account.getCards()) {
             cards.add(new Card(card));
         }
     }
-    public void addBalance(double amount) {
+    /**
+     * @param amount poate sa ia orice valoare
+     */
+    public void addBalance(final double amount) {
         balance += amount;
     }
+    /**
+     * Initializam un nou card
+     */
     public void newCard() {
         cards.add(new Card());
     }
+    /**
+     * Initializam un nou card de unica folosinta
+     */
     public void newOneTimeCard() {
         cards.add(new Card(true));
-    }
-    public void setMinBalance(double minBalance) {
-        this.minBalance = minBalance;
     }
 }

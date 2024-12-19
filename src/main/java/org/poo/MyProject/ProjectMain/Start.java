@@ -14,7 +14,11 @@ import java.util.ArrayList;
 public final class Start {
     private Start() {
     }
-    public static void start(ObjectInput input, ArrayNode output) {
+    /**
+     * Functia de inceput a codului
+     * Aici incepe implementarea propriu-zisa a codului
+     */
+    public static void start(final ObjectInput input, final ArrayNode output) {
         ArrayList<User> users = new ArrayList<>();
         for (UserInput userInput : input.getUsers()) {
             users.add(new User(userInput));
